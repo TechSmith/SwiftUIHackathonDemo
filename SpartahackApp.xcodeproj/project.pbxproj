@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AA5C5852B60667300934CE5 /* VisitLoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5842B60667300934CE5 /* VisitLoggerView.swift */; };
 		B5674D532B6033DA00B20F39 /* SpartahackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */; };
 		B5674D552B6033DA00B20F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D542B6033DA00B20F39 /* ContentView.swift */; };
 		B5674D572B6033DA00B20F39 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D562B6033DA00B20F39 /* Item.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AA5C5842B60667300934CE5 /* VisitLoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitLoggerView.swift; sourceTree = "<group>"; };
 		B5674D4F2B6033DA00B20F39 /* SpartahackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpartahackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartahackAppApp.swift; sourceTree = "<group>"; };
 		B5674D542B6033DA00B20F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */,
 				B5674D542B6033DA00B20F39 /* ContentView.swift */,
+				5AA5C5842B60667300934CE5 /* VisitLoggerView.swift */,
 				B5674D562B6033DA00B20F39 /* Item.swift */,
 				B5674D582B6033E600B20F39 /* Assets.xcassets */,
 				B5674D5D2B6033E600B20F39 /* SpartahackApp.entitlements */,
@@ -144,6 +147,7 @@
 			files = (
 				B5674D552B6033DA00B20F39 /* ContentView.swift in Sources */,
 				B5674D572B6033DA00B20F39 /* Item.swift in Sources */,
+				5AA5C5852B60667300934CE5 /* VisitLoggerView.swift in Sources */,
 				B5674D532B6033DA00B20F39 /* SpartahackAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
