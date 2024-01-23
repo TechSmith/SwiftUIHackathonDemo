@@ -15,7 +15,7 @@ enum LandmarkCategory {
    case entertainment
 }
 
-struct Landmark: Identifiable {
+struct Landmark: Identifiable, Hashable {
    var id: String
    var name: String
    var description: String
@@ -83,7 +83,7 @@ struct Landmark: Identifiable {
                The MSU Broad Art Museum was a location for filming portions of the movie Batman v. Superman: Dawn of Justice in October 2016.
                """,
                categories: [.entertainment])
-      ]
+      ].sorted(by: { $0.name < $1.name })
    }
 }
 

@@ -9,23 +9,16 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-   @Environment(\.modelContext) private var modelContext
-   @Query private var items: [Item]
-   
    @State private var visitLoggerShowing = false
 
    var body: some View {
       NavigationSplitView {
          List {
-            ForEach(items) { item in
-               NavigationLink {
-                  Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-               } label: {
-                  Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-               }
+            ForEach(Landmark.landmarks) { landmark in
+               NavigationLink(value: landmark, label: { Text(landmark.name) })
             }
-            .onDelete(perform: deleteItems)
          }
+         .navigationDestination(for: Landmark.self, destination: { LandmarkDetailView(landmark:$0) })
          .navigationSplitViewColumnWidth(min: 180, ideal: 200)
          .toolbar {
             ToolbarItem {
@@ -37,6 +30,7 @@ struct ContentView: View {
       } detail: {
          Text("Select an item")
       }
+      
       .sheet(isPresented: $visitLoggerShowing) {
          VisitLoggerView()
       }
@@ -44,14 +38,6 @@ struct ContentView: View {
 
    private func logVisit() {
       visitLoggerShowing = true
-   }
-
-   private func deleteItems(offsets: IndexSet) {
-      withAnimation {
-         for index in offsets {
-            modelContext.delete(items[index])
-         }
-      }
    }
 }
 
