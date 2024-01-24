@@ -18,10 +18,17 @@ struct VisitLoggerView: View {
           })
           .toolbar {
              ToolbarItem(placement: .cancellationAction) {
+                Button(role: .cancel) {
+                   visitLoggerShowing.toggle()
+                } label: {
+                   Text("Cancel")
+                }
+             }
+             ToolbarItem(placement: .primaryAction) {
                 Button(action: {
                    visitLoggerShowing.toggle()
                 }, label: {
-                   Text("Cancel")
+                   Image(systemName: "plus")
                 })
              }
           }
