@@ -29,10 +29,10 @@ struct ContentView: View {
                   }
                }
          }
+         .navigationTitle("MSU Landmarks")
       } detail: {
          Text("Select an item")
       }
-      
       .sheet(isPresented: $landmarkAdderShowing, onDismiss: {
          if let addedLandmark {
             addedLandmarks.append(addedLandmark)
