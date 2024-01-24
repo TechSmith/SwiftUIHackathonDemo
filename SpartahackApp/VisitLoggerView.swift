@@ -10,12 +10,25 @@ import SwiftUI
 struct VisitLoggerView: View {
    @Binding var visitLoggerShowing: Bool
    
-    var body: some View {
+   @State var id = ""
+   @State var name = ""
+   @State var description = ""
+   @State var categories: [LandmarkCategory] = []
+   
+   var body: some View {
        NavigationStack {
           Form(content: {
-             Text("Content")
-             Text("Hello, World!")
+             TextField(text: $id) {
+                Text("id")
+             }
+             TextField(text: $name) {
+                Text("name")
+             }
+             TextField(text: $description) {
+                Text("description")
+             }
           })
+          .padding()
           .toolbar {
              ToolbarItem(placement: .cancellationAction) {
                 Button(role: .cancel) {
@@ -27,6 +40,7 @@ struct VisitLoggerView: View {
              ToolbarItem(placement: .primaryAction) {
                 Button(action: {
                    visitLoggerShowing.toggle()
+//                   Landmark.landmarks.append(.init(id: id, name: name, description: description))
                 }, label: {
                    Image(systemName: "plus")
                 })
