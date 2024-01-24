@@ -14,8 +14,16 @@ struct LandmarkDetailView: View {
    
    var body: some View {
       ScrollView {
-         Image(landmark.id)
-         Text(landmark.description)
+         VStack(alignment: .center) {
+            Image(landmark.id)
+               .resizable()
+               .aspectRatio(contentMode: .fit)
+               .frame(maxWidth: 600, maxHeight: 300)
+            Text(landmark.description)
+               .multilineTextAlignment(.leading)
+               .frame(maxWidth: .infinity)
+         }
+         .padding()
       }
       .navigationTitle(landmark.name)
       .toolbar {

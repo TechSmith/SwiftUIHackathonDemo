@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "stem.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
