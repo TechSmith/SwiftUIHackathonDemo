@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LandmarkCategory {
+enum LandmarkCategory: String, CaseIterable {
    case food
    case historic
    case athletic

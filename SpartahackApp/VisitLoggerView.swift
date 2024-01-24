@@ -27,6 +27,21 @@ struct VisitLoggerView: View {
              TextField(text: $description) {
                 Text("description")
              }
+             Section {
+                List {
+                   ForEach(LandmarkCategory.allCases, id: \.rawValue) { landmarkCategory in
+                      Button {
+                         
+                      } label: {
+                         HStack {
+                            Text("\(landmarkCategory.rawValue)")
+                            Image(systemName: "checkmark")
+                         }
+                      }
+                      .buttonStyle(BorderlessButtonStyle())
+                   }
+                }
+             }
           })
           .padding()
           .toolbar {
