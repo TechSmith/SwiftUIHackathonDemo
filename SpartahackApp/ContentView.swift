@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-   @State private var visitLoggerShowing = false
+   @State private var landmarkAdderShowing = false
    @State var addedLandmark: Landmark?
    @State var addedLandmarks: [Landmark] = []
 
@@ -24,8 +24,8 @@ struct ContentView: View {
          .navigationSplitViewColumnWidth(min: 180, ideal: 200)
          .toolbar {
             ToolbarItem {
-               Button(action: logVisit) {
-                  Label("Add Item", systemImage: "plus")
+               Button(action: addLandmark) {
+                  Label("Add Landmark", systemImage: "plus")
                   }
                }
          }
@@ -33,18 +33,18 @@ struct ContentView: View {
          Text("Select an item")
       }
       
-      .sheet(isPresented: $visitLoggerShowing, onDismiss: {
+      .sheet(isPresented: $landmarkAdderShowing, onDismiss: {
          if let addedLandmark {
             addedLandmarks.append(addedLandmark)
          }
          addedLandmark = nil
       }, content: {
-         VisitLoggerView(visitLoggerShowing: $visitLoggerShowing, newValue: $addedLandmark)
+         LandmarkAdderView(visitLoggerShowing: $landmarkAdderShowing, newValue: $addedLandmark)
       })
     }
 
-   private func logVisit() {
-      visitLoggerShowing = true
+   private func addLandmark() {
+      landmarkAdderShowing = true
    }
 }
 

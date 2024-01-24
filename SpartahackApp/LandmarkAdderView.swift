@@ -1,5 +1,5 @@
 //
-//  VisitLoggerView.swift
+//  LandmarkAdderView.swift
 //  SpartahackApp
 //
 //  Created by Carson Greene on 1/23/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VisitLoggerView: View {
+struct LandmarkAdderView: View {
    @Binding var visitLoggerShowing: Bool
    @Binding var newValue: Landmark?
    
@@ -74,5 +74,5 @@ struct VisitLoggerView: View {
 }
 
 #Preview {
-   VisitLoggerView(visitLoggerShowing: .constant(true), newValue: .constant(Landmark.landmarks.first ?? Landmark(id: "", name: "", description: "")))
+   LandmarkAdderView(visitLoggerShowing: .constant(true), newValue: .constant(Landmark.landmarks.first ?? Landmark(id: "", name: "", description: "")))
 }
