@@ -34,7 +34,7 @@ struct ContentView: View {
       .sheet(isPresented: $visitLoggerShowing, onDismiss: {
          print("test")
       }, content: {
-         VisitLoggerView()
+         VisitLoggerView(visitLoggerShowing: $visitLoggerShowing)
       })
     }
 
