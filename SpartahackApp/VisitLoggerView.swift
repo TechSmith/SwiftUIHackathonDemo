@@ -13,7 +13,7 @@ struct VisitLoggerView: View {
    @State var id = ""
    @State var name = ""
    @State var description = ""
-   @State var categories: [LandmarkCategory] = []
+   @State var categories: Set<LandmarkCategory> = []
    
    var body: some View {
        NavigationStack {
@@ -31,11 +31,17 @@ struct VisitLoggerView: View {
                 List {
                    ForEach(LandmarkCategory.allCases, id: \.rawValue) { landmarkCategory in
                       Button {
-                         
+                         if categories.contains(landmarkCategory) {
+                            categories.remove(landmarkCategory)
+                         } else {
+                            categories.insert(landmarkCategory)
+                         }
                       } label: {
                          HStack {
                             Text("\(landmarkCategory.rawValue)")
-                            Image(systemName: "checkmark")
+                            if categories.contains(landmarkCategory) {
+                               Image(systemName: "checkmark")
+                            }
                          }
                       }
                       .buttonStyle(BorderlessButtonStyle())
