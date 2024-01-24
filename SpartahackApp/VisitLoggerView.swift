@@ -9,7 +9,11 @@ import SwiftUI
 
 struct VisitLoggerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       Form(content: {
+          Text("Content")
+          Text("Hello, World!")
+       })
+       .frame(width: 400, height: 300)
     }
 }
 
