@@ -10,11 +10,13 @@ import SwiftData
 
 struct ContentView: View {
    @State private var visitLoggerShowing = false
+   @State var addedLandmark: Landmark?
+   @State var addedLandmarks: [Landmark] = []
 
    var body: some View {
       NavigationSplitView {
          List {
-            ForEach(Landmark.landmarks) { landmark in
+            ForEach(Landmark.landmarks + addedLandmarks) { landmark in
                NavigationLink(value: landmark, label: { Text(landmark.name) })
             }
          }
@@ -32,9 +34,12 @@ struct ContentView: View {
       }
       
       .sheet(isPresented: $visitLoggerShowing, onDismiss: {
-         print("test")
+         if let addedLandmark {
+            addedLandmarks.append(addedLandmark)
+         }
+         addedLandmark = nil
       }, content: {
-         VisitLoggerView(visitLoggerShowing: $visitLoggerShowing)
+         VisitLoggerView(visitLoggerShowing: $visitLoggerShowing, newValue: $addedLandmark)
       })
     }
 
