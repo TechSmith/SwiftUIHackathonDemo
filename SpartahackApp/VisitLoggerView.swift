@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VisitLoggerView: View {
    @Binding var visitLoggerShowing: Bool
+   @Binding var newValue: Landmark?
    
    @State var id = ""
    @State var name = ""
@@ -60,8 +61,8 @@ struct VisitLoggerView: View {
              }
              ToolbarItem(placement: .primaryAction) {
                 Button(action: {
+                   newValue = Landmark(id: id, name: name, description: description, categories: Array(categories))
                    visitLoggerShowing.toggle()
-//                   Landmark.landmarks.append(.init(id: id, name: name, description: description))
                 }, label: {
                    Image(systemName: "plus")
                 })
@@ -73,5 +74,5 @@ struct VisitLoggerView: View {
 }
 
 #Preview {
-   VisitLoggerView(visitLoggerShowing: .constant(true))
+   VisitLoggerView(visitLoggerShowing: .constant(true), newValue: .constant(Landmark.landmarks.first ?? Landmark(id: "", name: "", description: "")))
 }
