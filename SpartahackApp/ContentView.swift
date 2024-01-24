@@ -31,9 +31,11 @@ struct ContentView: View {
          Text("Select an item")
       }
       
-      .sheet(isPresented: $visitLoggerShowing) {
-         VisitLoggerView()
-      }
+      .sheet(isPresented: $visitLoggerShowing, onDismiss: {
+         print("test")
+      }, content: {
+         VisitLoggerView(visitLoggerShowing: $visitLoggerShowing)
+      })
     }
 
    private func logVisit() {
