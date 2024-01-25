@@ -11,6 +11,7 @@ struct LandmarkDetailView: View {
    var landmark: Landmark
    
    @State private var visitLoggerShowing = false
+   @State private var historyShowing = false
    
    var body: some View {
       ScrollView {
@@ -30,16 +31,26 @@ struct LandmarkDetailView: View {
          ToolbarItem(placement: .primaryAction) {
             Button(action: logVisit,
                    label: {
-               Label(title: { Text("Log visit") },
-                     icon: { Image(systemName: "calendar.badge.plus") })
+               Label("Log visit", systemImage: "calendar.badge.plus")
+            })
+         }
+         ToolbarItem(placement: .secondaryAction) {
+            Button(action: viewHistory, 
+                   label: {
+               Label("Visit History", systemImage: "clock.arrow.circlepath")
             })
          }
       }
       .sheet(isPresented: $visitLoggerShowing, content: VisitLoggerView.init)
+      .sheet(isPresented: $historyShowing, content: EmptyView.init)
    }
    
    func logVisit() {
       visitLoggerShowing = true
+   }
+   
+   func viewHistory() {
+      historyShowing = true
    }
 }
 
