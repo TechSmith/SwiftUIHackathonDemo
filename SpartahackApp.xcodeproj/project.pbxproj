@@ -12,7 +12,7 @@
 		5AA5C5892B60776A00934CE5 /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */; };
 		5AA5C58B2B6157E400934CE5 /* VisitLoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C58A2B6157E400934CE5 /* VisitLoggerView.swift */; };
 		B5674D532B6033DA00B20F39 /* SpartahackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */; };
-		B5674D552B6033DA00B20F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D542B6033DA00B20F39 /* ContentView.swift */; };
+		B5674D552B6033DA00B20F39 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D542B6033DA00B20F39 /* MainView.swift */; };
 		B5674D572B6033DA00B20F39 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D562B6033DA00B20F39 /* Item.swift */; };
 		B5674D592B6033E600B20F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5674D582B6033E600B20F39 /* Assets.xcassets */; };
 		B5674D5C2B6033E600B20F39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5674D5B2B6033E600B20F39 /* Preview Assets.xcassets */; };
@@ -26,7 +26,7 @@
 		5AA5C58A2B6157E400934CE5 /* VisitLoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitLoggerView.swift; sourceTree = "<group>"; };
 		B5674D4F2B6033DA00B20F39 /* SpartahackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpartahackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartahackAppApp.swift; sourceTree = "<group>"; };
-		B5674D542B6033DA00B20F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5674D542B6033DA00B20F39 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B5674D562B6033DA00B20F39 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B5674D582B6033E600B20F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5674D5B2B6033E600B20F39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			children = (
 				5A3F19CE2B61B8A800A184AC /* Info.plist */,
 				B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */,
-				B5674D542B6033DA00B20F39 /* ContentView.swift */,
+				B5674D542B6033DA00B20F39 /* MainView.swift */,
 				5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */,
 				5AA5C5862B60677900934CE5 /* Landmark.swift */,
 				5AA5C5842B60667300934CE5 /* LandmarkAdderView.swift */,
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5674D552B6033DA00B20F39 /* ContentView.swift in Sources */,
+				B5674D552B6033DA00B20F39 /* MainView.swift in Sources */,
 				5AA5C58B2B6157E400934CE5 /* VisitLoggerView.swift in Sources */,
 				5AA5C5872B60677900934CE5 /* Landmark.swift in Sources */,
 				B5674D572B6033DA00B20F39 /* Item.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  SpartahackApp
 //
 //  Created by Daewoo Maurya on 1/23/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct MainView: View {
    @State private var landmarkAdderShowing = false
    @State var addedLandmark: Landmark?
    @State var addedLandmarks: [Landmark] = []
@@ -49,6 +49,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
         .modelContainer(for: Item.self, inMemory: true)
 }
