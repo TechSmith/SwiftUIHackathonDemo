@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3F19D92B62CF2000A184AC /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F19D82B62CF2000A184AC /* HistoryView.swift */; };
 		5AA5C5852B60667300934CE5 /* LandmarkAdderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5842B60667300934CE5 /* LandmarkAdderView.swift */; };
 		5AA5C5872B60677900934CE5 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5862B60677900934CE5 /* Landmark.swift */; };
 		5AA5C5892B60776A00934CE5 /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5A3F19CE2B61B8A800A184AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5A3F19D82B62CF2000A184AC /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		5AA5C5842B60667300934CE5 /* LandmarkAdderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAdderView.swift; sourceTree = "<group>"; };
 		5AA5C5862B60677900934CE5 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		B5674D462B6033DA00B20F39 = {
 			isa = PBXGroup;
 			children = (
+				5A3F19D82B62CF2000A184AC /* HistoryView.swift */,
 				B5674D512B6033DA00B20F39 /* SpartahackApp */,
 				B5674D502B6033DA00B20F39 /* Products */,
 			);
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5674D552B6033DA00B20F39 /* MainView.swift in Sources */,
+				5A3F19D92B62CF2000A184AC /* HistoryView.swift in Sources */,
 				5AA5C58B2B6157E400934CE5 /* VisitLoggerView.swift in Sources */,
 				5AA5C5872B60677900934CE5 /* Landmark.swift in Sources */,
 				B5674D572B6033DA00B20F39 /* Visit.swift in Sources */,

@@ -49,7 +49,9 @@ struct LandmarkDetailView: View {
                          visits: visits,
                          landmarkId: landmark.id)
       })
-      .sheet(isPresented: $historyShowing, content: EmptyView.init)
+      .sheet(isPresented: $historyShowing, content: {
+         HistoryView(history: visits)
+      })
    }
    
    func logVisit() {
