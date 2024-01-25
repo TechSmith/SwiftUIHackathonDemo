@@ -46,7 +46,6 @@ struct LandmarkDetailView: View {
       }
       .sheet(isPresented: $visitLoggerShowing, content: {
          VisitLoggerView(showing: $visitLoggerShowing,
-                         visits: visits,
                          landmarkId: landmark.id)
       })
       .sheet(isPresented: $historyShowing, content: {

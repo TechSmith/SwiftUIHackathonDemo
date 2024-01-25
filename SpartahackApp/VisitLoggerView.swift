@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct VisitLoggerView: View {
+   @Environment(\.modelContext) private var modelContext
    @Binding var showing: Bool
-   
-   @State var visits: [Visit] // TODO: Figure out bindings with this
    var landmarkId: String
    
    @State private var timestamp = Date.now
@@ -41,11 +40,11 @@ struct VisitLoggerView: View {
    
    func logVisit() {
       let visit = Visit(landmarkId: landmarkId, timestamp: timestamp, notes: notes)
-      visits.append(visit)
+      modelContext.insert(visit)
       showing = false
    }
 }
 
 #Preview {
-   VisitLoggerView(showing: .constant(true), visits: [], landmarkId: "test")
+   VisitLoggerView(showing: .constant(true), landmarkId: "test")
 }
