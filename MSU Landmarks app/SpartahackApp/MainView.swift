@@ -41,7 +41,7 @@ struct MainView: View {
       }, content: {
          LandmarkAdderView(visitLoggerShowing: $landmarkAdderShowing, newValue: $addedLandmark)
       })
-    }
+   }
 
    private func addLandmark() {
       landmarkAdderShowing = true

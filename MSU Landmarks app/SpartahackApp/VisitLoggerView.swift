@@ -28,6 +28,7 @@ struct VisitLoggerView: View {
                    label: {
                Text("Log Visit")
             })
+            Spacer()
          }
          .padding()
       }
