@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct VisitLoggerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+   @Binding var showing: Bool
+   
+   @State var visits: [Visit] // TODO: Figure out bindings with this
+   var landmarkId: String
+   
+   @State private var timestamp = Date.now
+   @State private var notes = ""
+   
+   var body: some View {
+      NavigationStack {
+         VStack(alignment: .leading) {
+            DatePicker("Time", selection: $timestamp)
+            HStack(alignment: .top) {
+               Text("Notes")
+               TextEditor(text: $notes)
+                  .textEditorStyle(.plain)
+                  .frame(minHeight: 100)
+            }
+         }
+         .padding()
+         .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+               Button(action: logVisit,
+                      label: {
+                  Text("Log Visit")
+               })
+            }
+         }
+      }
+   }
+   
+   func logVisit() {
+      let visit = Visit(landmarkId: landmarkId, timestamp: timestamp, notes: notes)
+      visits.append(visit)
+      showing = false
+   }
 }
 
 #Preview {
-    VisitLoggerView()
+   VisitLoggerView(showing: .constant(true), visits: [], landmarkId: "test")
 }

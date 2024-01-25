@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct LandmarkDetailView: View {
    var landmark: Landmark
    
    @State private var visitLoggerShowing = false
    @State private var historyShowing = false
+   
+   @Query private var visits: [Visit]
    
    var body: some View {
       ScrollView {
@@ -41,7 +44,11 @@ struct LandmarkDetailView: View {
             })
          }
       }
-      .sheet(isPresented: $visitLoggerShowing, content: VisitLoggerView.init)
+      .sheet(isPresented: $visitLoggerShowing, content: {
+         VisitLoggerView(showing: $visitLoggerShowing,
+                         visits: visits,
+                         landmarkId: landmark.id)
+      })
       .sheet(isPresented: $historyShowing, content: EmptyView.init)
    }
    
