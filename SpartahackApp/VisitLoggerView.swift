@@ -22,19 +22,14 @@ struct VisitLoggerView: View {
             HStack(alignment: .top) {
                Text("Notes")
                TextEditor(text: $notes)
-                  .textEditorStyle(.plain)
-                  .frame(minHeight: 100)
+                  .frame(height: 100)
             }
+            Button(action: logVisit,
+                   label: {
+               Text("Log Visit")
+            })
          }
          .padding()
-         .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-               Button(action: logVisit,
-                      label: {
-                  Text("Log Visit")
-               })
-            }
-         }
       }
    }
    
