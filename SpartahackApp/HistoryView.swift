@@ -26,11 +26,24 @@ struct HistoryView: View {
    }
    
    var body: some View {
-      List {
-         ForEach(history) { visit in
-            HStack(alignment: .top) {
-               Text(dateFormatter.string(from: visit.timestamp))
-               Text(visit.notes)
+      if history.isEmpty {
+         VStack {
+            Image(systemName: "clock.arrow.circlepath")
+               .resizable()
+               .aspectRatio(contentMode: .fit)
+               .frame(height: 50)
+            Text("No history for this landmark")
+               .font(.title)
+         }
+         .foregroundColor(.secondary)
+         .padding()
+      } else {
+         List {
+            ForEach(history) { visit in
+               HStack(alignment: .top) {
+                  Text(dateFormatter.string(from: visit.timestamp))
+                  Text(visit.notes)
+               }
             }
          }
       }
