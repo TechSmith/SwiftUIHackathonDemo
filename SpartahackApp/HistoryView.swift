@@ -6,9 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct HistoryView: View {
-   var history: [Visit]
+   @Query private var history: [Visit]
+   
+   init(landmarkId: String) {
+      let predicate = #Predicate<Visit> { visit in
+         visit.landmarkId == landmarkId
+      }
+      
+      _history = Query(filter: predicate, sort: \.timestamp)
+   }
    
    private var dateFormatter: DateFormatter {
       let dateFormatter = DateFormatter()
@@ -29,5 +38,5 @@ struct HistoryView: View {
 }
 
 #Preview {
-    HistoryView(history: [])
+    HistoryView(landmarkId: "test")
 }

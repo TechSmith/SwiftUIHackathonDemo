@@ -9,12 +9,10 @@ import SwiftUI
 import SwiftData
 
 struct LandmarkDetailView: View {
-   var landmark: Landmark
+   let landmark: Landmark
    
    @State private var visitLoggerShowing = false
    @State private var historyShowing = false
-   
-   @Query private var visits: [Visit]
    
    var body: some View {
       ScrollView {
@@ -49,7 +47,7 @@ struct LandmarkDetailView: View {
                          landmarkId: landmark.id)
       })
       .sheet(isPresented: $historyShowing, content: {
-         HistoryView(history: visits)
+         HistoryView(landmarkId: landmark.id)
       })
    }
    
