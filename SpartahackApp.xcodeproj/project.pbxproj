@@ -49,7 +49,6 @@
 		B5674D462B6033DA00B20F39 = {
 			isa = PBXGroup;
 			children = (
-				5A3F19D82B62CF2000A184AC /* HistoryView.swift */,
 				B5674D512B6033DA00B20F39 /* SpartahackApp */,
 				B5674D502B6033DA00B20F39 /* Products */,
 			);
@@ -73,6 +72,7 @@
 				5AA5C5862B60677900934CE5 /* Landmark.swift */,
 				5AA5C5842B60667300934CE5 /* LandmarkAdderView.swift */,
 				5AA5C58A2B6157E400934CE5 /* VisitLoggerView.swift */,
+				5A3F19D82B62CF2000A184AC /* HistoryView.swift */,
 				B5674D562B6033DA00B20F39 /* Visit.swift */,
 				B5674D582B6033E600B20F39 /* Assets.xcassets */,
 				B5674D5D2B6033E600B20F39 /* SpartahackApp.entitlements */,

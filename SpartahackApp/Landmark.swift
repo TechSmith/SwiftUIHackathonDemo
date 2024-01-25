@@ -82,7 +82,10 @@ struct Landmark: Identifiable, Hashable {
 
                The MSU Broad Art Museum was a location for filming portions of the movie Batman v. Superman: Dawn of Justice in October 2016.
                """,
-               categories: [.entertainment])
+               categories: [.entertainment]),
+         Landmark(id: "tscHQ",
+                  name: "TechSmith HQ",
+                  description: "Constructed in 2022 by Christman Group, TechSmith's headquarters building is one of the newest on the campus of MSU. Housing TechSmith employees, makers of industry-leading software like Snagit, Camtasia, and Audiate, it was built with the intent of being the start of a tech/innovation hub in East Lansing, with other companies expected to join TechSmith in coming years.")
       ].sorted(by: { $0.name < $1.name })
    }
 }
