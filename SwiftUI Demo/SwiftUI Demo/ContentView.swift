@@ -25,6 +25,7 @@ struct ContentView: View {
          }
          Text("Checkbox \(checkboxIsChecked ? "is" : "isn't") checked")
       }
+      .fixedSize()
       .padding(8)
       .sheet(isPresented: $sheetShowing) {
          CheckboxView(checkboxIsChecked: $checkboxIsChecked)

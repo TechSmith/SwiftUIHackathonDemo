@@ -13,5 +13,6 @@ struct SwiftUI_DemoApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.contentSize)
     }
 }
