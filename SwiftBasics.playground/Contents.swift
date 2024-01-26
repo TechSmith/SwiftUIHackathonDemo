@@ -10,11 +10,22 @@ let constantGreeting = "Constant String"
 print(constantGreeting)
 
 // Computed var + string interpolation
-var helloWorld: String {
+var helloWorldComputed: String {
+   let formatter = DateFormatter()
+   formatter.dateFormat = "HH:mm:ss"
+   return "Hello Spartahack, it's \(formatter.string(from: Date.now))"
+}
+print(helloWorldComputed)
+sleep(1)
+print(helloWorldComputed)
+
+// Shorthand computed var
+var shortHelloWorldComputed: String {
    "Hello Spartahack, it's \(Date.now)"
 }
-print(helloWorld)
-print(helloWorld)
+print(shortHelloWorldComputed)
+sleep(1)
+print(shortHelloWorldComputed)
 
 // Optionals
 //var nonOptional: String = nil //< Not allowed
