@@ -31,7 +31,7 @@ print(shortHelloWorldComputed)
 //var nonOptional: String = nil //< Not allowed
 var schrodingersCat: String? = nil
 print(schrodingersCat)
-schrodingersCat = "Black Jack"
+schrodingersCat = "Blackjack"
 print(schrodingersCat)
 
 //Unwrapping optionals
@@ -74,6 +74,7 @@ buttonPressed {
 struct Animal {
    let name: String
    var legs: Int?
+   // Generated init
 }
 var snake = Animal(name: "Philbert", legs: nil)
 var dog = Animal(name: "Bob", legs: 4)
