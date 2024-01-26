@@ -1,5 +1,6 @@
 import Cocoa
 
+// vars and let
 var greeting = "Hello, SpartaHack"
 greeting += " welcome to TechSmith Tech Talk"
 print(greeting)
@@ -9,6 +10,7 @@ let constantGreeting = "Constant String"
 print(constantGreeting)
 
 
+// Optionals
 var schrodingersCat: String? = nil
 print("\(schrodingersCat)")
 schrodingersCat = "Black Jack"
@@ -50,6 +52,7 @@ buttonPressed {
    return $0 > 0 ? "positive" : "negative"
 }
 
+// Classes vs Structs
 struct Animal {
    let name: String
    var legs: Int?
