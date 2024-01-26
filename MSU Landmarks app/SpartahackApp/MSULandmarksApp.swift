@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct SpartahackAppApp: App {
+struct MSULandmarksApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Visit.self,

@@ -12,7 +12,7 @@
 		5AA5C5872B60677900934CE5 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5862B60677900934CE5 /* Landmark.swift */; };
 		5AA5C5892B60776A00934CE5 /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */; };
 		5AA5C58B2B6157E400934CE5 /* VisitLoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5C58A2B6157E400934CE5 /* VisitLoggerView.swift */; };
-		B5674D532B6033DA00B20F39 /* SpartahackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */; };
+		B5674D532B6033DA00B20F39 /* MSULandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D522B6033DA00B20F39 /* MSULandmarksApp.swift */; };
 		B5674D552B6033DA00B20F39 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D542B6033DA00B20F39 /* MainView.swift */; };
 		B5674D572B6033DA00B20F39 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5674D562B6033DA00B20F39 /* Visit.swift */; };
 		B5674D592B6033E600B20F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5674D582B6033E600B20F39 /* Assets.xcassets */; };
@@ -26,8 +26,8 @@
 		5AA5C5862B60677900934CE5 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailView.swift; sourceTree = "<group>"; };
 		5AA5C58A2B6157E400934CE5 /* VisitLoggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitLoggerView.swift; sourceTree = "<group>"; };
-		B5674D4F2B6033DA00B20F39 /* SpartahackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpartahackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartahackAppApp.swift; sourceTree = "<group>"; };
+		B5674D4F2B6033DA00B20F39 /* MSULandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSULandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5674D522B6033DA00B20F39 /* MSULandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSULandmarksApp.swift; sourceTree = "<group>"; };
 		B5674D542B6033DA00B20F39 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B5674D562B6033DA00B20F39 /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
 		B5674D582B6033E600B20F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		B5674D502B6033DA00B20F39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5674D4F2B6033DA00B20F39 /* SpartahackApp.app */,
+				B5674D4F2B6033DA00B20F39 /* MSULandmarks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				5A3F19CE2B61B8A800A184AC /* Info.plist */,
-				B5674D522B6033DA00B20F39 /* SpartahackAppApp.swift */,
+				B5674D522B6033DA00B20F39 /* MSULandmarksApp.swift */,
 				B5674D542B6033DA00B20F39 /* MainView.swift */,
 				5AA5C5882B60776A00934CE5 /* LandmarkDetailView.swift */,
 				5AA5C5862B60677900934CE5 /* Landmark.swift */,
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5674D4E2B6033DA00B20F39 /* SpartahackApp */ = {
+		B5674D4E2B6033DA00B20F39 /* MSULandmarks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5674D602B6033E600B20F39 /* Build configuration list for PBXNativeTarget "SpartahackApp" */;
+			buildConfigurationList = B5674D602B6033E600B20F39 /* Build configuration list for PBXNativeTarget "MSULandmarks" */;
 			buildPhases = (
 				B5674D4B2B6033DA00B20F39 /* Sources */,
 				B5674D4C2B6033DA00B20F39 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = SpartahackApp;
+			name = MSULandmarks;
 			productName = SpartahackApp;
-			productReference = B5674D4F2B6033DA00B20F39 /* SpartahackApp.app */;
+			productReference = B5674D4F2B6033DA00B20F39 /* MSULandmarks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5674D4A2B6033DA00B20F39 /* Build configuration list for PBXProject "SpartahackApp" */;
+			buildConfigurationList = B5674D4A2B6033DA00B20F39 /* Build configuration list for PBXProject "MSULandmarks" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5674D4E2B6033DA00B20F39 /* SpartahackApp */,
+				B5674D4E2B6033DA00B20F39 /* MSULandmarks */,
 			);
 		};
 /* End PBXProject section */
@@ -165,7 +165,7 @@
 				5AA5C5872B60677900934CE5 /* Landmark.swift in Sources */,
 				B5674D572B6033DA00B20F39 /* Visit.swift in Sources */,
 				5AA5C5852B60667300934CE5 /* LandmarkAdderView.swift in Sources */,
-				B5674D532B6033DA00B20F39 /* SpartahackAppApp.swift in Sources */,
+				B5674D532B6033DA00B20F39 /* MSULandmarksApp.swift in Sources */,
 				5AA5C5892B60776A00934CE5 /* LandmarkDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +320,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TechSmith.SpartahackApp;
+				PRODUCT_BUNDLE_IDENTIFIER = TechSmith.MSULandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -357,7 +357,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TechSmith.SpartahackApp;
+				PRODUCT_BUNDLE_IDENTIFIER = TechSmith.MSULandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -370,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5674D4A2B6033DA00B20F39 /* Build configuration list for PBXProject "SpartahackApp" */ = {
+		B5674D4A2B6033DA00B20F39 /* Build configuration list for PBXProject "MSULandmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5674D5E2B6033E600B20F39 /* Debug */,
@@ -379,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5674D602B6033E600B20F39 /* Build configuration list for PBXNativeTarget "SpartahackApp" */ = {
+		B5674D602B6033E600B20F39 /* Build configuration list for PBXNativeTarget "MSULandmarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5674D612B6033E600B20F39 /* Debug */,
