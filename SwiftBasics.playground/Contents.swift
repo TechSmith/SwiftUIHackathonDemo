@@ -9,6 +9,12 @@ let constantGreeting = "Constant String"
 //constantGreeting += "This isn't happening"
 print(constantGreeting)
 
+// Computed var + string interpolation
+var helloWorld: String {
+   "Hello Spartahack, it's \(Date.now)"
+}
+print(helloWorld)
+print(helloWorld)
 
 // Optionals
 //var nonOptional: String = nil //< Not allowed
