@@ -11,23 +11,24 @@ print(constantGreeting)
 
 
 // Optionals
+//var nonOptional: String = nil //< Not allowed
 var schrodingersCat: String? = nil
-print("\(schrodingersCat)")
+print(schrodingersCat)
 schrodingersCat = "Black Jack"
-print("\(schrodingersCat)")
+print(schrodingersCat)
 
 //Unwrapping optionals
-// 1
+// 1 - default value
 let catName1 = schrodingersCat ?? "Cat is Dead"
 
-// 2
+// 2 - conditional unwrap
 if let schrodingersCat {
    print("cat is alive")
 } else {
    print("cat is dead")
 }
 
-// 3 Force unwrap
+// 3 - force unwrap
 let catName3: String = schrodingersCat!
 
 
