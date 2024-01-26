@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
    @State var sheetShowing = false
-   @State var checkboxIsChecked = false
+   @AppStorage("checked") var checkboxIsChecked = false
    
    var body: some View {
       VStack {
