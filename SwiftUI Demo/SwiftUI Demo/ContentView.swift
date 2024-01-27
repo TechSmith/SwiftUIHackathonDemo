@@ -40,7 +40,7 @@ struct ContentView: View {
          
          Text("Has @Binding and @AppStorage")
          Button(action: { sheet2Showing.toggle() }) {
-            Text("Show Sheet 2)")
+            Text("Show Sheet 2")
          }
          Toggle(isOn: $checkbox2IsChecked, label: {
             Text("Checkbox 2 \(checkbox2IsChecked ? "is" : "isn't") checked")
