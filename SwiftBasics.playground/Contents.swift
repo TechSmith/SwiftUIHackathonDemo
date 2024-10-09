@@ -1,7 +1,7 @@
 import Cocoa
 
 // vars and let
-var greeting = "Hello, HackDearborn"
+var greeting = "Hello, Hackathon"
 greeting += " welcome to TechSmith Tech Talk"
 print(greeting)
 
@@ -13,7 +13,7 @@ print(constantGreeting)
 var helloWorldComputed: String {
    let formatter = DateFormatter()
    formatter.dateFormat = "HH:mm:ss"
-   return "Hello Spartahack, it's \(formatter.string(from: Date.now))"
+   return "Hello Hackathon, it's \(formatter.string(from: Date.now))"
 }
 print(helloWorldComputed)
 sleep(1)
@@ -21,7 +21,7 @@ print(helloWorldComputed)
 
 // Shorthand computed var
 var shortHelloWorldComputed: String {
-   "Hello Spartahack, it's \(Date.now)"
+   "Hello Hackathon, it's \(Date.now)"
 }
 print(shortHelloWorldComputed)
 sleep(1)
