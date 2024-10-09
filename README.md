@@ -1,6 +1,6 @@
-# SpartaHack 2024
+# SwiftUI Hackathon demo
 
-This repository contains all sources featured in TechSmith's talk from Spartahack 9, including:
+This repository contains all sources featured in TechSmith's SwiftUI talk, including:
 * **SwiftBasics.playground**: A demonstration of basic Swift syntax, type-safety, and data structures
 * **SwiftUI Demo**: A simple SwiftUI Xcode project showing the basics of SwiftUI
 * **MSU Landmarks app**: A more complex SwiftUI app showcasing cross-platform compatibility and the SwiftData framework
