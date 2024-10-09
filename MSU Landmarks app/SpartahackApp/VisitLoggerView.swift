@@ -1,6 +1,6 @@
 //
 //  VisitLoggerView.swift
-//  SpartahackApp
+//  MSULandmarks
 //
 //  Created by Carson Greene on 1/24/24.
 //

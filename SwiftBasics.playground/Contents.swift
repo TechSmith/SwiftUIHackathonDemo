@@ -1,7 +1,7 @@
 import Cocoa
 
 // vars and let
-var greeting = "Hello, SpartaHack"
+var greeting = "Hello, HackDearborn"
 greeting += " welcome to TechSmith Tech Talk"
 print(greeting)
 
@@ -39,7 +39,9 @@ print(schrodingersCat)
 let catName1 = schrodingersCat ?? "Cat is Dead"
 
 // 2 - conditional unwrap
+print(schrodingersCat)
 if let schrodingersCat {
+   print(schrodingersCat)
    print("cat is alive")
 } else {
    print("cat is dead")
@@ -52,7 +54,7 @@ let catName3: String = schrodingersCat!
 // Closures - mini function
 func buttonPressed(taskClosure: (Int) -> String) {
    // Make the app change UI for the button
-   let value = taskClosure(10)
+   let value = taskClosure(-6)
    print(value)
 }
 
@@ -78,6 +80,7 @@ struct Animal {
 }
 var snake = Animal(name: "Philbert", legs: nil)
 var dog = Animal(name: "Bob", legs: 4)
+print(dog)
 print(dog)
 
 dog.legs = 3

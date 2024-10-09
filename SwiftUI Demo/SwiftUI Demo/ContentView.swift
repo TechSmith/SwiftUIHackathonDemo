@@ -25,9 +25,9 @@ struct ContentView: View {
             .foregroundStyle(.tint)
          // View modifiers: change view appearance
          Text("Hello, world!")
-            //.foregroundStyle(.red)
-            //.bold()
-            //.italic()
+            .foregroundStyle(.red)
+            .bold()
+            .italic()
          
          Text("No @Binding, no @AppStorage")
             .font(.caption)
@@ -49,20 +49,20 @@ struct ContentView: View {
       .fixedSize()
       .padding(8)
       .sheet(isPresented: $sheet1Showing) {
-         NormalCheckboxView(checkboxIsChecked: checkbox1IsChecked)
+         NormalCheckboxView(checked: checkbox1IsChecked)
       }
       .sheet(isPresented: $sheet2Showing) {
-         BindingCheckboxView(checkboxIsChecked: $checkbox2IsChecked)
+         BindingCheckboxView(checked: $checkbox2IsChecked)
       }
    }
 }
 
 struct BindingCheckboxView: View {
    // @Binding: two-way communication between views
-   @Binding var checkboxIsChecked: Bool
+   @Binding var checked: Bool
    
    var body: some View {
-      Toggle(isOn: $checkboxIsChecked) {
+      Toggle(isOn: $checked) {
          Text("Is Checked?")
       }
       .padding()
@@ -70,10 +70,10 @@ struct BindingCheckboxView: View {
 }
 
 struct NormalCheckboxView: View {
-   @State var checkboxIsChecked: Bool
+   @State var checked: Bool
    
    var body: some View {
-      Toggle(isOn: $checkboxIsChecked) {
+      Toggle(isOn: $checked) {
          Text("Is Checked?")
       }
       .padding()

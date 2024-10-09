@@ -1,6 +1,6 @@
 //
 //  MainView.swift
-//  SpartahackApp
+//  MSULandmarks
 //
 //  Created by Daewoo Maurya on 1/23/24.
 //

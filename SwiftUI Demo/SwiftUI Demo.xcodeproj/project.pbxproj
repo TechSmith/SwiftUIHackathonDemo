@@ -11,6 +11,7 @@
 		5A99C1722B6400F2004F1BED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A99C1712B6400F2004F1BED /* ContentView.swift */; };
 		5A99C1742B6400F4004F1BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A99C1732B6400F4004F1BED /* Assets.xcassets */; };
 		5A99C1772B6400F4004F1BED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A99C1762B6400F4004F1BED /* Preview Assets.xcassets */; };
+		5AB1CEFC2B69998C00B947E0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1CEFB2B69998C00B947E0 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5A99C1732B6400F4004F1BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A99C1762B6400F4004F1BED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A99C1782B6400F4004F1BED /* SwiftUI_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_Demo.entitlements; sourceTree = "<group>"; };
+		5AB1CEFB2B69998C00B947E0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				5A99C16F2B6400F2004F1BED /* SwiftUI_DemoApp.swift */,
 				5A99C1712B6400F2004F1BED /* ContentView.swift */,
+				5AB1CEFB2B69998C00B947E0 /* SwiftUIView.swift */,
 				5A99C1732B6400F4004F1BED /* Assets.xcassets */,
 				5A99C1782B6400F4004F1BED /* SwiftUI_Demo.entitlements */,
 				5A99C1752B6400F4004F1BED /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				5A99C1722B6400F2004F1BED /* ContentView.swift in Sources */,
 				5A99C1702B6400F2004F1BED /* SwiftUI_DemoApp.swift in Sources */,
+				5AB1CEFC2B69998C00B947E0 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
